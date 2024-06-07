@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        </style> -->
+    <link rel="stylesheet" href="style.css">
+    <title>live chat</title>
+</head>
+<body>
+    <h1 class="title">Live Chat</h1>
+    <div class="main">
+        <div class="name">
+            <input id="name-input" class="name-input" value="Anonymous" type="text" maxlength="20">
+        </div>
+        <ul class="message-container" id="message-container">
+            <li class="message-left">
+                <p class="message">Bala Suresh
+                    <span>Tiger *02 june 2024</span>
+                </p>
+            </li>
+            <li class="message-right">
+                <p class="message">Welcome
+                    <span>Lion *02 june 2024</span>
+                </p>
+            </li>
+            <li class="message-feedback" id="feedback">
+                <p class="feedback">Bala Suresh is typing</p>
+            </li>
+        </ul>
+        <form class="message-form" id="message-form">
+            <input class="message-input" name="message" id="message-input" type="text" >
+            <div class="v-devider"></div>
+            <button type="submit" class="send-button">Send</button>
+        </form>
+    </div>
+    <h3 class="client-total" id="client-total">Total Client : 2</h3>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js" integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="script.js"></script>
+</body>
+</html>
